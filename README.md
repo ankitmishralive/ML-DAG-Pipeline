@@ -12,15 +12,12 @@ Project Organization
 ------------
 
     ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
     ├── README.md          <- The top-level README for developers using this project.
     ├── data
     │   ├── external       <- Data from third party sources.
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
     │
     ├── models             <- Trained and serialized models, model predictions, or model summaries
     │
@@ -37,8 +34,7 @@ Project Organization
     │                         generated with `pip freeze > requirements.txt`
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
+    ├── src                <- Source code for use in this project.  │   
     │   │
     │   ├── data           <- Scripts to download or generate data
     │   │   └── make_dataset.py
@@ -55,6 +51,31 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+
+
+
+## Pipeline Stages
+
+1. **Data Collection**
+   - **Command**: `python src/extract_dataset.py`
+   - **Description**: Extracts the raw data from zip files into the `data/raw/extracted` directory.
+
+2. **Data Preparation**
+   - **Command**: `python src/data_preparation.py`
+   - **Description**: Cleans and preprocesses the extracted data, removing outliers and imputing missing values. Outputs cleaned data to `data/interim/cleaned_data.csv`.
+
+3. **Data Splitting**
+   - **Command**: `python src/data_splitting.py`
+   - **Description**: Splits the cleaned data into training and testing sets. Saves the splits to `data/processed/`.
+
+4. **Model Training**
+   - **Command**: `python src/model_training.py`
+   - **Description**: Trains a LightGBM model using the training data and saves the model to `models/model.pkl`.
+
+5. **Model Evaluation**
+   - **Command**: `python src/model_evaluation.py`
+   - **Description**: Evaluates the trained model on the test data and saves the evaluation metrics to `metrics/metrics.json`.
+
 
 
 --------
