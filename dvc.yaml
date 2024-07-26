@@ -1,0 +1,48 @@
+stages:
+  data_collection:
+    cmd: python3 src/extract_dataset.py
+    deps:
+    - src/extract_dataset.py
+    outs:
+    - data/raw/extracted
+
+  data_preparation:
+    cmd: python3 src/data_preparation.py
+    deps:
+    - data/raw/extracted/corpus.csv
+    - src/data_preparation.py
+    outs:
+    - data/interim/cleaned_data.csv
+
+  data_splitting:
+    cmd: python3 src/data_splitting.py
+    deps:
+    - data/interim/cleaned_data.csv
+    - src/data_splitting.py
+    outs:
+    - data/processed/X_test.csv
+    - data/processed/X_train.csv
+    - data/processed/y_test.csv
+    - data/processed/y_train.csv
+
+  model_training:
+    cmd: python3 src/model_training.py
+    deps:
+    - data/processed/X_test.csv
+    - data/processed/X_train.csv
+    - data/processed/y_test.csv
+    - data/processed/y_train.csv
+    - src/model_training.py
+    outs:
+    - models/model.pkl
+
+
+  model_evaluation:
+    cmd: python3 src/model_evaluation.py
+    deps:
+    - data/processed/X_test.csv
+    - data/processed/y_test.csv
+    - models/model.pkl
+    - src/model_evaluation.py
+    outs:
+    - metrics/metrics.json
