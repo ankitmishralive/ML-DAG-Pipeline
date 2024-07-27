@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-import pickle 
+import joblib
 import json 
 from sklearn.metrics import classification_report, accuracy_score, roc_auc_score,precision_score,f1_score,recall_score
 
@@ -16,8 +16,8 @@ def main():
     models_dir = root / 'models'
     model_path = models_dir / 'model.pkl'
 
-    with model_path.open('rb') as model_file:
-        model = pickle.load(model_file)
+   
+    model = joblib.load(model_path)
 
     model_prediction = model.predict(X_test)
 

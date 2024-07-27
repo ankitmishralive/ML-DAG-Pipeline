@@ -3,7 +3,7 @@ import lightgbm as lgb
 from sklearn.metrics import accuracy_score, classification_report
 from pathlib import Path
 import pandas as pd
-import pickle
+import joblib
 
 
 def main():
@@ -45,8 +45,8 @@ def main():
     # print("models_dir :--", models_dir)
 
     model_path = models_dir / 'model.pkl'
-    with model_path.open('wb') as model_file:
-        pickle.dump(lgbm_model, model_file)                                                                                                                     
+    joblib.dump(lgbm_model, model_path)
+                                                                                                                 
 
 if __name__ == "__main__":
     main()
