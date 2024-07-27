@@ -4,7 +4,7 @@
 
 
 # app = fastAPI(
-#     title="Water Potability Prediction API",
+#     title="Potability Prediction API",
 #     description="API for predicting water potability based on various chemical properties.",
 # )
 
@@ -14,5 +14,10 @@
 
 # with model_path.open('rb') as model_file:
 #     model = pickle.load(model_file)
+
+
+# ---------------------  Working---------------------
+
+
 
 

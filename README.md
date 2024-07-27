@@ -1,10 +1,10 @@
-ML Pipeline for predicting water potability based on various chemical properties
+ML DAG pipeline for predicting water potability based on various chemical properties
 ==============================
  
-This project is a comprehensive machine learning pipeline designed to predict the potability of water. It integrates various stages of the machine learning lifecycle, from data extraction and cleaning to model training and evaluation. The pipeline is built using DVC (Data Version Control) to manage data, models, and metrics efficiently.
+This project is a comprehensive machine learning DAG pipeline designed to predict the potability of water. It integrates various stages of the machine learning lifecycle, from data extraction and cleaning to model training and evaluation. The pipeline is built using DVC (Data Version Control) to manage data, models, and metrics efficiently.
 
 
-## DAG
+## DAG Pipeline 
 
 ![Pipeline Diagram](reports/dag.png)   
 
