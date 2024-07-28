@@ -5,7 +5,7 @@ import joblib
 import uvicorn 
 
 
-from data_models import PredictionDataset
+from api.data_models import PredictionDataset
 
 
 app = FastAPI(
@@ -15,7 +15,7 @@ app = FastAPI(
 
 current_path = Path(__file__)
 root = current_path.parent.parent
-model_path =root / 'models'/ 'model.pkl'
+model_path =root / 'models'/ 'model.joblib'
 model = joblib.load(model_path)
 
 

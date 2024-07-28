@@ -44,7 +44,7 @@ def main():
     # print("root path :--", root)
     # print("models_dir :--", models_dir)
 
-    model_path = models_dir / 'model.pkl'
+    model_path = models_dir / 'model.joblib'
     joblib.dump(lgbm_model, model_path)
                                                                                                                  
 

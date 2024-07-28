@@ -6,3 +6,4 @@ dvc
 fastapi
 joblib
 lightgbm
+uvicorn 

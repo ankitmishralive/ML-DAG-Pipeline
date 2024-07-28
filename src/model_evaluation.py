@@ -14,7 +14,7 @@ def main():
     X_test = pd.read_csv(processed_data  / 'X_test.csv')
     y_test = pd.read_csv(processed_data  / 'y_test.csv')
     models_dir = root / 'models'
-    model_path = models_dir / 'model.pkl'
+    model_path = models_dir / 'model.joblib'
 
    
     model = joblib.load(model_path)

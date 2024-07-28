@@ -34,7 +34,7 @@ stages:
     - data/processed/y_train.csv
     - src/model_training.py
     outs:
-    - models/model.pkl
+    - models/model.joblib
 
 
   model_evaluation:
@@ -42,7 +42,7 @@ stages:
     deps:
     - data/processed/X_test.csv
     - data/processed/y_test.csv
-    - models/model.pkl
+    - models/model.joblib
     - src/model_evaluation.py
     outs:
     - metrics/metrics.json
