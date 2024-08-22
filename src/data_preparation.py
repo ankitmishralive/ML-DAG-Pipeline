@@ -12,9 +12,13 @@ def clean_and_impute(df, column):
         df = df[~((df[column] < (Q1 - 1.5 * IQR)) | (df[column] > (Q3 + 1.5 * IQR)))]
 
         # Impute missing values with the mean
-        mean_value = df[column].mean()
+        # mean_value = df[column].mean()
    
-        df[column].fillna(mean_value, inplace=True)
+        # df[column].fillna(mean_value, inplace=True)
+
+        median_value = df[column].median()
+   
+        df[column].fillna(median_value, inplace=True)
    
         return df
     except KeyError:
