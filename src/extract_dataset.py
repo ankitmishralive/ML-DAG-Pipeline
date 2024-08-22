@@ -10,6 +10,7 @@ def extract_zip_file(input_path: Path,output_path: Path):
         f.extractall(path= output_path)
         input_file_name = input_path.stem + input_path.suffix
     
+
         
 def main():
     # current file path 

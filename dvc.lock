@@ -5,8 +5,8 @@ stages:
     deps:
     - path: src/extract_dataset.py
       hash: md5
-      md5: 7073bceb5f5432bd5089c95d7f1cfbfa
-      size: 1119
+      md5: 6e8ea954dfcb2e303e2daf9b15c2c3d4
+      size: 1120
     outs:
     - path: data/raw/extracted
       hash: md5
@@ -22,8 +22,8 @@ stages:
       size: 525187
     - path: src/data_preparation.py
       hash: md5
-      md5: ef4e00b3e4e949c9393759655d5b70e7
-      size: 1247
+      md5: fe0bbb2609809cc5fbceb5804075ec8b
+      size: 2380
     outs:
     - path: data/interim/cleaned_data.csv
       hash: md5
@@ -38,8 +38,8 @@ stages:
       size: 524444
     - path: src/data_splitting.py
       hash: md5
-      md5: 2cec89264312502c7a7837b8cd04f34b
-      size: 906
+      md5: 6e79daea6bc5d430e1f67be3bf5f9cf8
+      size: 2540
     params:
       params.yaml:
         data_splitting.test_size: 0.2
@@ -113,8 +113,8 @@ stages:
       size: 343258
     - path: src/model_evaluation.py
       hash: md5
-      md5: bcdf8a7881c503161052e7f93ce3eda8
-      size: 1357
+      md5: b944d556e0be4016cea949ac98bcd86e
+      size: 2708
     outs:
     - path: metrics/metrics.json
       hash: md5
