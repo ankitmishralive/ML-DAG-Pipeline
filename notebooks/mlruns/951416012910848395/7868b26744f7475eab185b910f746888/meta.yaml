@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/7868b26744f7475eab185b910f746888/artifacts
+end_time: 1724356462716
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: 7868b26744f7475eab185b910f746888
+run_name: bright-ox-937
+run_uuid: 7868b26744f7475eab185b910f746888
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724355863185
+status: 3
+tags: []
+user_id: ankitmishralive

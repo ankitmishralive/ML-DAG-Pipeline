@@ -8,3 +8,4 @@ joblib
 lightgbm
 uvicorn 
 yaml
+mlflow

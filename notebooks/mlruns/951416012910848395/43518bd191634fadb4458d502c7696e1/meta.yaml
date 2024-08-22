@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/43518bd191634fadb4458d502c7696e1/artifacts
+end_time: 1724357767389
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: 43518bd191634fadb4458d502c7696e1
+run_name: selective-stork-307
+run_uuid: 43518bd191634fadb4458d502c7696e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724357103143
+status: 3
+tags: []
+user_id: ankitmishralive

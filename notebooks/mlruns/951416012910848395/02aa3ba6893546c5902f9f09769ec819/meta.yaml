@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/02aa3ba6893546c5902f9f09769ec819/artifacts
+end_time: 1724356462716
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: 02aa3ba6893546c5902f9f09769ec819
+run_name: overjoyed-lynx-765
+run_uuid: 02aa3ba6893546c5902f9f09769ec819
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724355863185
+status: 3
+tags: []
+user_id: ankitmishralive

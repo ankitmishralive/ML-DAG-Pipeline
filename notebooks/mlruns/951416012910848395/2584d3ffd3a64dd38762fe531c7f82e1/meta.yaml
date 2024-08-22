@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/2584d3ffd3a64dd38762fe531c7f82e1/artifacts
+end_time: 1724352968498
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: 2584d3ffd3a64dd38762fe531c7f82e1
+run_name: skillful-gull-607
+run_uuid: 2584d3ffd3a64dd38762fe531c7f82e1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724352578803
+status: 3
+tags: []
+user_id: ankitmishralive

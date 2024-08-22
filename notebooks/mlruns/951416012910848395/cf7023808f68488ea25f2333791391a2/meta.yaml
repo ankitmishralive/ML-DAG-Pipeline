@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/cf7023808f68488ea25f2333791391a2/artifacts
+end_time: 1724352968498
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: cf7023808f68488ea25f2333791391a2
+run_name: righteous-lynx-430
+run_uuid: cf7023808f68488ea25f2333791391a2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724352578803
+status: 3
+tags: []
+user_id: ankitmishralive
