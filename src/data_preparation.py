@@ -15,6 +15,7 @@ def clean_and_impute(df, column):
         mean_value = df[column].mean()
    
         df[column].fillna(mean_value, inplace=True)
+   
         return df
     except KeyError:
         print(f"Error: The column '{column}' does not exist in the DataFrame.")
