@@ -4,7 +4,14 @@ from sklearn.metrics import accuracy_score, classification_report
 from pathlib import Path
 import pandas as pd
 import joblib
+import yaml
 
+colsample_bytree=yaml.safe_load(open("params.yaml"))['model_training']['colsample_bytree']
+learning_rate=yaml.safe_load(open("params.yaml"))['model_training']['learning_rate']
+max_depth=yaml.safe_load(open("params.yaml"))['model_training']['max_depth']
+n_estimators=yaml.safe_load(open("params.yaml"))['model_training']['n_estimators']
+num_leaves=yaml.safe_load(open("params.yaml"))['model_training']['num_leaves']
+subsample=yaml.safe_load(open("params.yaml"))['model_training']['subsample']
 
 def main():
 
@@ -19,12 +26,12 @@ def main():
     y_test = pd.read_csv(processed_data  / 'y_test.csv')
 
     lgbm_model = lgb.LGBMClassifier(
-        colsample_bytree=1.0,
-        learning_rate=0.05,
-        max_depth=20,
-        n_estimators=100,
-        num_leaves=31,
-        subsample=0.8
+        colsample_bytree=colsample_bytree,
+        learning_rate=learning_rate,
+        max_depth=max_depth,
+        n_estimators=n_estimators,
+        num_leaves=num_leaves,
+        subsample=subsample
     )
 
     # Training 

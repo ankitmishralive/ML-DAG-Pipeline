@@ -19,6 +19,8 @@ stages:
     deps:
     - data/interim/cleaned_data.csv
     - src/data_splitting.py
+    params:
+    - data_splitting.test_size
     outs:
     - data/processed/X_test.csv
     - data/processed/X_train.csv
@@ -33,6 +35,13 @@ stages:
     - data/processed/y_test.csv
     - data/processed/y_train.csv
     - src/model_training.py
+    params:
+    - model_training.colsample_bytree
+    - model_training.learning_rate
+    - model_training.max_depth
+    - model_training.n_estimators
+    - model_training.num_leaves
+    - model_training.subsample
     outs:
     - models/model.joblib
 
@@ -40,9 +49,10 @@ stages:
   model_evaluation:
     cmd: python3 src/model_evaluation.py
     deps:
-    - data/processed/X_test.csv
-    - data/processed/y_test.csv
-    - models/model.joblib
-    - src/model_evaluation.py
-    outs:
-    - metrics/metrics.json
+      - data/processed/X_test.csv
+      - data/processed/y_test.csv
+      - models/model.joblib
+      - src/model_evaluation.py
+    metrics:
+      - metrics/metrics.json
+

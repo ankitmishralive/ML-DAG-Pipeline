@@ -7,3 +7,4 @@ fastapi
 joblib
 lightgbm
 uvicorn 
+yaml

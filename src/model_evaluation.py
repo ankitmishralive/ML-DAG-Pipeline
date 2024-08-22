@@ -38,6 +38,9 @@ def main():
     with metrics_file_path.open('w') as file:
         json.dump(metrics_dict, file, indent=4)
      
+    # metrics_file_path = 'metrics.json'
+    # with metrics_file_path.open('w') as file:
+    #     json.dump(metrics_dict, file, indent=4)
 
 
 

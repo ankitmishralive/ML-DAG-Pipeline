@@ -38,8 +38,11 @@ stages:
       size: 524444
     - path: src/data_splitting.py
       hash: md5
-      md5: 8d36433a31cbf2f7da76de76d4f07366
-      size: 809
+      md5: 2cec89264312502c7a7837b8cd04f34b
+      size: 906
+    params:
+      params.yaml:
+        data_splitting.test_size: 0.2
     outs:
     - path: data/processed/X_test.csv
       hash: md5
@@ -78,12 +81,20 @@ stages:
       size: 5063
     - path: src/model_training.py
       hash: md5
-      md5: eb42c74bd8d4158e8438295dee0720cf
-      size: 1538
+      md5: 5f124234497f536df4067da7f0aacb8a
+      size: 2094
+    params:
+      params.yaml:
+        model_training.colsample_bytree: 1.0
+        model_training.learning_rate: 0.05
+        model_training.max_depth: 20
+        model_training.n_estimators: 100
+        model_training.num_leaves: 31
+        model_training.subsample: 0.8
     outs:
     - path: models/model.joblib
       hash: md5
-      md5: 948d902a3c558a114554753dc47a631b
+      md5: f560eadca5f2fe5b1ae8d8e67f951446
       size: 343258
   model_evaluation:
     cmd: python3 src/model_evaluation.py
@@ -98,12 +109,12 @@ stages:
       size: 1275
     - path: models/model.joblib
       hash: md5
-      md5: 948d902a3c558a114554753dc47a631b
+      md5: f560eadca5f2fe5b1ae8d8e67f951446
       size: 343258
     - path: src/model_evaluation.py
       hash: md5
-      md5: 9f76883c98f93d45664293544ddd0bce
-      size: 1218
+      md5: bcdf8a7881c503161052e7f93ce3eda8
+      size: 1357
     outs:
     - path: metrics/metrics.json
       hash: md5
