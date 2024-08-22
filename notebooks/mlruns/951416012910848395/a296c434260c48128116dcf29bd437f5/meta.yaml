@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/a296c434260c48128116dcf29bd437f5/artifacts
+end_time: 1724357767389
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: a296c434260c48128116dcf29bd437f5
+run_name: monumental-moose-924
+run_uuid: a296c434260c48128116dcf29bd437f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724357103143
+status: 3
+tags: []
+user_id: ankitmishralive

@@ -1,0 +1,13 @@
+digest: ee579241
+name: dataset
+profile: '{"num_rows": 2526, "num_elements": 22734}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "ph", "required": true}, {"type":
+  "double", "name": "Hardness", "required": true}, {"type": "double", "name": "Solids",
+  "required": true}, {"type": "double", "name": "Chloramines", "required": true},
+  {"type": "double", "name": "Sulfate", "required": true}, {"type": "double", "name":
+  "Conductivity", "required": true}, {"type": "double", "name": "Organic_carbon",
+  "required": true}, {"type": "double", "name": "Trihalomethanes", "required": true},
+  {"type": "double", "name": "Turbidity", "required": true}]}'
+source: '{"tags": {"mlflow.user": "ankitmishralive", "mlflow.source.name": "/home/ankitmishralive/.local/lib/python3.10/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL"}}'
+source_type: code

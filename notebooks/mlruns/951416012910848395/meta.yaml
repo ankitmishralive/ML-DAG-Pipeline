@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/951416012910848395
+creation_time: 1724352578799
+experiment_id: '951416012910848395'
+last_update_time: 1724352578799
+lifecycle_stage: active
+name: lightgbm_hyperparameter_tuning

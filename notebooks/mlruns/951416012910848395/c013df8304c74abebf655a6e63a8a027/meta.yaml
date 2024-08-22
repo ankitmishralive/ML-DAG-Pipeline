@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/c013df8304c74abebf655a6e63a8a027/artifacts
+end_time: 1724352968498
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: c013df8304c74abebf655a6e63a8a027
+run_name: merciful-slug-340
+run_uuid: c013df8304c74abebf655a6e63a8a027
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724352578803
+status: 3
+tags: []
+user_id: ankitmishralive

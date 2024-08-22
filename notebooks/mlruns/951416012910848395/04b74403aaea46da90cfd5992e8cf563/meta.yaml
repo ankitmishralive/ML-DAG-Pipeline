@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/04b74403aaea46da90cfd5992e8cf563/artifacts
+end_time: 1724353472562
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: 04b74403aaea46da90cfd5992e8cf563
+run_name: worried-crow-115
+run_uuid: 04b74403aaea46da90cfd5992e8cf563
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724353109182
+status: 3
+tags: []
+user_id: ankitmishralive

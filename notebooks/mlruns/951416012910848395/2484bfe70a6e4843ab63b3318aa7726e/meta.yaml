@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/951416012910848395/2484bfe70a6e4843ab63b3318aa7726e/artifacts
+end_time: 1724352968498
+entry_point_name: ''
+experiment_id: '951416012910848395'
+lifecycle_stage: active
+run_id: 2484bfe70a6e4843ab63b3318aa7726e
+run_name: placid-ox-3
+run_uuid: 2484bfe70a6e4843ab63b3318aa7726e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1724352578803
+status: 3
+tags: []
+user_id: ankitmishralive
